@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/instagram_backgroung_wallpaper"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.rapidapps.instagram.instagram.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@drawable/instagram_title_image" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/emailLoginEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/edittext_border"
+            android:hint="EMAIL"
+            android:padding="15dp"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/passwordLoginEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/edittext_border"
+            android:hint="PASSWORD"
+            android:padding="15dp"
+            android:textColorHint="#ffffff" />
+
+        <LinearLayout
+            android:id="@+id/loginButtonMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/fill_layout_color"
+            android:gravity="center"
+            android:padding="7dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp">
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/googleSignInForInstagram"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </com.google.android.gms.common.SignInButton>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--- OR --"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/createAccountButtonMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/fill_layout_color"
+            android:gravity="center"
+            android:padding="7dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CREATE ACCOUNT"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
