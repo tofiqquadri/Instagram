@@ -20,6 +20,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".RegisterUserActivity" />
+        <activity android:name=".profileuser.UserProfileActivity" />
+        <activity
+            android:name=".instagramposthome.InstagramHome"
+            android:label="@string/title_activity_instagram_home"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

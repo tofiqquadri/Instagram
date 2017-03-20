@@ -3,12 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_height="match_parent"
     android:background="@drawable/instagram_backgroung_wallpaper"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.rapidapps.instagram.instagram.MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:context="com.rapidapps.instagram.instagram.RegisterUserActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +16,7 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:paddingStart="10dp"
-        android:paddingTop="15dp">
+        android:paddingTop="25dp">
 
         <ImageView
 
@@ -35,7 +33,7 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/emailLoginEditText"
+            android:id="@+id/emailRegisterEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
@@ -48,7 +46,7 @@
             android:textColorHint="#ffffff" />
 
         <EditText
-            android:id="@+id/passwordLoginEditText"
+            android:id="@+id/passwordRegisterEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
@@ -61,7 +59,7 @@
             android:textColorHint="#ffffff" />
 
         <LinearLayout
-            android:id="@+id/loginButtonMain"
+            android:id="@+id/createAccountSubmitBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
@@ -74,60 +72,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="LOGIN"
-                android:textColor="@color/common_google_signin_btn_text_dark_default"
-                android:textSize="24sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginTop="15dp"
-            android:padding="10dp">
-
-            <com.google.android.gms.common.SignInButton
-                android:id="@+id/googleSignInForInstagram"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-
-            </com.google.android.gms.common.SignInButton>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:gravity="center">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="--- OR --"
-                android:textColor="#ffffff"
-                android:textSize="20sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/createAccountButtonMain"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/fill_layout_color"
-            android:gravity="center"
-            android:padding="7dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="CREATE ACCOUNT"
+                android:text="CREATE"
                 android:textColor="@color/common_google_signin_btn_text_dark_default"
                 android:textSize="24sp" />
 
